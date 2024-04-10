@@ -34,7 +34,4 @@ app.use("/api/orderPayment", orderPaymenRouter)
 app.use("/api/updatepayment", updatePaymenRouter)
 
 
-app.listen(8000, ()=>{
-    connect()
-    console.log("connected to backend")
-})
+app.listen(3000, () => console.log("Server ready on port 3000."));
