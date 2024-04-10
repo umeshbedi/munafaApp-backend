@@ -1,7 +1,7 @@
 import axios from "axios";
-import { cID, oID } from "../utils/generateID.js";
+import { cID, oID } from "../api/utils/generateID.js.js";
 import { deleteBeneficiary } from "./deleteBeneficiary.js";
-import { payouts } from "../utils/payoutInit.js";
+import { payouts } from "../api/utils/payoutInit.js.js";
 
 export async function transerMoney(req, res, beneficiaryID) {
     const { amount, transferMode } = req.body

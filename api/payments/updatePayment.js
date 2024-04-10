@@ -1,6 +1,6 @@
 import axios from 'axios';
 import express from 'express'
-import Users from '../models/Users.js';
+import Users from '../../models/Users.jss.js';
 
 const updatePaymenRouter = express.Router()
 

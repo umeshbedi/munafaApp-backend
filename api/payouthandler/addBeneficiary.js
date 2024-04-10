@@ -1,6 +1,6 @@
-import { oID } from "../utils/generateID.js";
+import { oID } from "../api/utils/generateID.js.js";
 import { transerMoney } from "./transferMoney.js";
-import { payouts } from "../utils/payoutInit.js";
+import { payouts } from "../api/utils/payoutInit.js.js";
 
 export async function addBeneficiary(req, res) {
 

@@ -1,7 +1,7 @@
 import express from "express";
-import Users from "../models/Users.js";
+import Users from "../../models/Users.jss.js";
 import bcrypt from "bcryptjs";
-import { sendEmail } from "../utils/sendMail.js";
+import { sendEmail } from "../api/utils/sendMail.js.js";
 
 const {genSaltSync, hashSync, compare} = bcrypt
 

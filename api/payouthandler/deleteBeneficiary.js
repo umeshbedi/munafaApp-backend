@@ -1,5 +1,5 @@
 import { checkPayoutStatus } from "./checkPayoutStatus.js";
-import { payouts } from "../utils/payoutInit.js";
+import { payouts } from "../api/utils/payoutInit.js.js";
 
 
 export async function deleteBeneficiary(req, res, transferID, beneficiaryID) {

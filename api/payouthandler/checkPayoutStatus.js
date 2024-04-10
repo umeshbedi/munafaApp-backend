@@ -1,4 +1,4 @@
-import { payouts } from "../utils/payoutInit.js";
+import { payouts } from "../api/utils/payoutInit.js.js";
 
 export async function checkPayoutStatus(req, res, transferID) {
 

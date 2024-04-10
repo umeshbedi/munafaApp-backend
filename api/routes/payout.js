@@ -1,5 +1,5 @@
 import express from 'express'
-import { addBeneficiary } from '../payouthandler/addBeneficiary.js';
+import { addBeneficiary } from '../../payouthandler/addBeneficiary.jsy.js';
 
 const payoutRouter = express.Router()
 
