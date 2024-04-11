@@ -6,9 +6,7 @@ const UserSchema = new mongoose.Schema({
     password: { type: String, required: true },
     balance:{type:Number, default:0},
     upi:{type:String, default:"success@upi"},
-    paymentHistory:{type:[{}]},
-    transactions:{type:[{}]},
-    pendingPayments:{type:[{}]},
+    paymentHistory:{type:[{}]}
     
 },
     { timestamps: true }

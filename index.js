@@ -35,7 +35,7 @@ app.use("/api/updatepayment", updatePaymenRouter)
 
 const PORT = process.env.PORT
 
-app.listen(PORT || 3000, () => {
-    console.log(`Server ready on port ${PORT || "3000"}`)
+app.listen(PORT || 3002, () => {
+    console.log(`Server ready on port ${PORT || "3002"}`)
     connect()
 });

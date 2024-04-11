@@ -14,18 +14,18 @@ authRouter.post("/register", async (req, res)=>{
     try {
         const user = await Users.findOne({email:req.body.email})
         if(user) return res.status(405).send("user exist")
-        const newUser = new Users({
+        const newUser = Users({
             name:req.body.name,
             email:req.body.email,
             password:hash
         })
         const createdUser = await newUser.save()
-        return res.status(200).json(createdUser)
+        res.status(200).json(createdUser)
 
         
     } catch (error) {
         console.log(error)
-        res.send(error.message)
+        res.status(403).json(error.message)
     }
     
 })
